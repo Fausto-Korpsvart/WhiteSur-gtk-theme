@@ -245,7 +245,7 @@ $flap_sidebar_size: 240px;
   }
 }
 
-#NautilusViewCell {
+#NautilusViewCell, .nautilus-view-cell {
   clamp box {
     margin: 0;
     border-spacing: 0;
@@ -306,7 +306,7 @@ $flap_sidebar_size: 240px;
   }
 }
 
-#NautilusFileChooser {
+#NautilusFileChooser, .nautilus-file-chooser {
   multi-layout-view > box {
     padding-left: $container_padding * 2;
   }
@@ -315,6 +315,22 @@ $flap_sidebar_size: 240px;
 navigation-view-page > toolbarview > scrolledwindow > viewport > clamp {
   > box > box > stack > button {
     margin-top: $container_padding * 2;
+  }
+}
+
+#sidebar_my_computer_wrapper {
+  padding: 0;
+  margin-bottom: $container_padding / 2;
+}
+
+.mc-toggle-group {
+  padding: 2px;
+  border-radius: $bt_radius + 2px;
+
+  > button {
+    margin: 0;
+    min-height: 16px;
+    border-radius: $bt_radius;
   }
 }
 
